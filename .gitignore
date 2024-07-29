@@ -4,3 +4,4 @@ benchmarkbot/yarn.lock
 usertests
 .DS_Store
 bbout.json
+bbconf.json
