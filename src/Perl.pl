@@ -22,9 +22,9 @@ sub generate_primes {
     my $i = 2;
 
     while ($i <= $limit) {
+        my $j = 0;
         my $seems_prime = 1;
         my $selected_prime = -1;
-        my $j = 0;
 
         while ($j < @primes && $seems_prime && $selected_prime <= sqrt($i)) {
             $selected_prime = $primes[$j];
@@ -48,4 +48,5 @@ sub main {
     my @primes = generate_primes(1000000);
 }
 
+# Execute
 main();

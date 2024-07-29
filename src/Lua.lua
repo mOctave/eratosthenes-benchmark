@@ -20,9 +20,9 @@ function generatePrimes(limit)
     while i <= limit do
         local seemsPrime = true
         local j = 1
-        local selectedPrime = primes[j]
+        local selectedPrime = -1
 
-        while j <= #primes and selectedPrime <= math.sqrt(i) and seemsPrime do
+        while j <= #primes and seemsPrime and selectedPrime <= math.sqrt(i) do
             selectedPrime = primes[j]
             if i % selectedPrime == 0 then
                 seemsPrime = false
@@ -44,4 +44,5 @@ function main()
     generatePrimes(1000000)
 end
 
+-- Execute
 main()

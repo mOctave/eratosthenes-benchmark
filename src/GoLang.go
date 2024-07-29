@@ -1,5 +1,5 @@
 // Copyright (c) 2024 by iannl.
-// 
+//
 // Eratosthenes Benchmark is free software: you can redistribute it and/or
 // modify it under the terms of the GNU Affero General Public License as
 // published by the Free Software Foundation, either version 3 of the
@@ -24,10 +24,14 @@ func generatePrimes(limit int) []int {
 	i := 2
 
 	for i <= limit {
+		j := 0
 		seemsPrime := true
 		selectedPrime := -1
 
-		for j := 0; j < len(primes) && selectedPrime <= int(math.Sqrt(float64(i))) && seemsPrime; j++ {
+		for j < len(primes) &&
+			selectedPrime <= int(math.Sqrt(float64(i))) &&
+			seemsPrime {
+
 			selectedPrime = primes[j]
 			if i%selectedPrime == 0 {
 				seemsPrime = false

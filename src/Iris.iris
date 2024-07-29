@@ -19,23 +19,23 @@ fn generateprimes(limit) {
     
     while i <= limit {
         j = 0
-        prime = true
-        last = 0
-        while (j < length(primes)) and (prime) and (last <= sqrt(i)) {
+        seemsPrime = true
+        selectedPrime = -1
+
+        while (j < length(primes)) and (seemsPrime) and (selectedPrime <= sqrt(i)) {
             last = primes[j]
             if (i % last == 0) {
                 prime = false
             }
-            j=j+1
+            j = j + 1
         }
         if (prime) {
-            push(primes,i)
+            push(primes, i)
         }
-        i=i+1
+        i = i + 1
     }
 }
 
 fn main() {
-    limit = 1000000
-    generateprimes(limit)
+    generateprimes(1000000)
 }
