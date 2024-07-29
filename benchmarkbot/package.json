@@ -1,0 +1,11 @@
+{
+  "name": "benchmarkbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "author": "iannl",
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

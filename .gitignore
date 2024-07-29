@@ -1,0 +1,5 @@
+benchmarkbot/node_modules
+benchmarkbot/yarn.lock
+bin
+usertests
+.DS_Store
