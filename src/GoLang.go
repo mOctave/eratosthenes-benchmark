@@ -21,9 +21,8 @@ import (
 
 func generatePrimes(limit int) []int {
 	primes := []int{}
-	i := 2
 
-	for i <= limit {
+	for i := 2; i <= limit; i++ {
 		j := 0
 		seemsPrime := true
 		selectedPrime := -1
@@ -36,13 +35,13 @@ func generatePrimes(limit int) []int {
 			if i%selectedPrime == 0 {
 				seemsPrime = false
 			}
+
+			j++
 		}
 
 		if seemsPrime {
 			primes = append(primes, i)
 		}
-
-		i++
 	}
 
 	return primes
