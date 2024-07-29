@@ -1,0 +1,26 @@
+fn generateprimes(limit) {
+    primes = []
+    i = 2
+    
+    while i <= limit {
+        j = 0
+        prime = true
+        last = 0
+        while (j < length(primes)) and (prime) and (last <= sqrt(i)) {
+            last = primes[j]
+            if (i % last == 0) {
+                prime = false
+            }
+            j=j+1
+        }
+        if (prime) {
+            push(primes,i)
+        }
+        i=i+1
+    }
+}
+
+fn main() {
+    limit = 100000
+    generateprimes(limit)
+}

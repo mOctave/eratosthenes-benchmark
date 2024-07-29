@@ -1,0 +1,18 @@
+{
+    "iris":{
+        "language":"Iris",
+        "prereq":"iris",
+        "buildcmd":"iris build src/Iris.iris",
+        "runcmd":"./bin/iris"
+    },
+    "nodejs":{
+        "language":"NodeJS",
+        "prereq":"node -v",
+        "runcmd":"node src/NodeJS.js"
+    },
+    "golang":{
+        "language":"Go",
+        "prereq":"go version",
+        "runcmd":"go run src/GoLang.go"
+    }
+}
