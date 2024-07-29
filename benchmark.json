@@ -1,18 +1,34 @@
 {
     "iris":{
+        "id":"iris",
         "language":"Iris",
         "prereq":"iris",
-        "buildcmd":"iris build src/Iris.iris",
-        "runcmd":"./bin/iris"
+        "buildcmd":"iris build Iris.iris",
+        "runcmd":"./iris"
     },
     "nodejs":{
+        "id":"nodejs",
         "language":"NodeJS",
         "prereq":"node -v",
-        "runcmd":"node src/NodeJS.js"
+        "runcmd":"node NodeJS.js"
     },
     "golang":{
+        "id":"golang",
         "language":"Go",
         "prereq":"go version",
-        "runcmd":"go run src/GoLang.go"
+        "buildcmd":"go build GoLang.go",
+        "runcmd":"./GoLang"
+    },
+    "python":{
+        "id":"python",
+        "language":"Python",
+        "prereq":"python3 --version",
+        "runcmd":"python3 Python.py"
+    },
+    "lua":{
+        "id":"lua",
+        "language":"Lua",
+        "prereq":"lua -v",
+        "runcmd":"lua Lua.lua"
     }
 }

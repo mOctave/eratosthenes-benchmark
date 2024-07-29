@@ -1,5 +1,5 @@
 benchmarkbot/node_modules
 benchmarkbot/yarn.lock
-bin
+.bb_cache
 usertests
 .DS_Store
