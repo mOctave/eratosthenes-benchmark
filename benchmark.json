@@ -44,5 +44,12 @@
         "prereq":"clang --version",
         "buildcmd":"clang++ CPP.cpp -std=c++11",
         "runcmd":"./a.out"
+    },
+    "swift":{
+        "id":"swift",
+        "language":"Swift",
+        "prereq":"swift --help",
+        "buildcmd":"swiftc Swift.swift -parse-as-library",
+        "runcmd":"./Swift"
     }
 }
