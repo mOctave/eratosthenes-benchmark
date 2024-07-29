@@ -2,9 +2,8 @@ import math;
 
 def generatePrimes(limit):
   primes = []
-  i = 2
 
-  while (i <= limit):
+  for i in range(2, limit + 1):
     j = 0
     seemsPrime = True
     selectedPrime = -1
@@ -18,8 +17,6 @@ def generatePrimes(limit):
 
     if seemsPrime:
       primes.append(i)
-
-    i += 1
   
   return primes
 
