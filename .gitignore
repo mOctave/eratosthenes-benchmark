@@ -3,3 +3,4 @@ benchmarkbot/yarn.lock
 .bb_cache
 usertests
 .DS_Store
+bbout.json
