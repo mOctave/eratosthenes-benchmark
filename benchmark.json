@@ -45,6 +45,18 @@
         "buildcmd":"clang++ CPP.cpp -std=c++11",
         "runcmd":"./a.out"
     },
+    "ruby":{
+        "id":"ruby",
+        "language":"Ruby",
+        "prereq":"ruby -v",
+        "runcmd":"ruby Ruby.rb"
+    },
+    "perl":{
+        "id":"perl",
+        "language":"Perl",
+        "prereq":"perl -v",
+        "runcmd":"perl Perl.pl"
+    },
     "swift":{
         "id":"swift",
         "language":"Swift",
