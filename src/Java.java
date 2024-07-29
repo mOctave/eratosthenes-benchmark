@@ -8,10 +8,11 @@ public class Java {
 			int j = 0;
 			boolean seemsPrime = true;
 			int selectedPrime = -1;
+
 			while (
 				j < primes.size()
-				&& selectedPrime <= Math.sqrt(i)
 				&& seemsPrime
+				&& selectedPrime <= Math.sqrt(i)
 			) {
 				selectedPrime = primes.get(j);
 

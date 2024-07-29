@@ -9,7 +9,7 @@ def generatePrimes(limit):
     seemsPrime = True
     selectedPrime = -1
 
-    while (j < len(primes) and selectedPrime <= math.sqrt(i) and seemsPrime):
+    while (j < len(primes) and seemsPrime and selectedPrime <= math.sqrt(i)):
       selectedPrime = primes[j]
       if i % selectedPrime == 0:
         seemsPrime = False
