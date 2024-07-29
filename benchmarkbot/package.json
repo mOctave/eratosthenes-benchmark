@@ -2,7 +2,9 @@
   "name": "benchmarkbot",
   "version": "1.0.0",
   "main": "index.js",
-  "bin": "index.js",
+  "bin":  {
+    "bb":"index.js"
+  },
   "author": "iannl",
   "license": "AGPL-3.0-only",
   "dependencies": {
