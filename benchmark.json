@@ -30,5 +30,19 @@
         "language":"Lua",
         "prereq":"lua -v",
         "runcmd":"lua Lua.lua"
+    },
+    "java":{
+        "id":"java",
+        "language":"Java",
+        "prereq":"java --version",
+        "buildcmd":"javac Java.java",
+        "runcmd":"java Java"
+    },
+    "cpp":{
+        "id":"cpp",
+        "language":"C++",
+        "prereq":"clang --version",
+        "buildcmd":"clang++ CPP.cpp -std=c++11",
+        "runcmd":"./a.out"
     }
 }
