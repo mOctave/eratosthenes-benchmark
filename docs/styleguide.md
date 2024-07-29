@@ -19,12 +19,12 @@ Lines should not have any trailing whitespace. Each file should have one empty l
 Each file should be preceded by the following copyright notice on single-line comments:
 
 ```
-Copyright (c) {{ year added }}  {{ first contributor to file }}
+Copyright (c) {{ year added }} by {{ first contributor to file }}.
 
-Eratosthenes Benchmark is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+Eratosthenes Benchmark is free software: you can redistribute it and/or
+modify it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
 
 Eratosthenes Benchmark is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
