@@ -1,7 +1,12 @@
+# Benchmark Bot
 benchmarkbot/node_modules
 benchmarkbot/yarn.lock
 .bb_cache
-usertests
-.DS_Store
 bbout.json
 bbconf.json
+
+# User-specific testing
+usertests
+
+# Other files to exclude
+.DS_Store
