@@ -1,10 +1,24 @@
+# Copyright (c) 2024 by mOctave.
+# 
+# Eratosthenes Benchmark is free software: you can redistribute it and/or
+# modify it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Eratosthenes Benchmark is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import math;
 
 def generatePrimes(limit):
   primes = []
-  i = 2
 
-  while (i <= limit):
+  for i in range(2, limit + 1):
     j = 0
     seemsPrime = True
     selectedPrime = -1
@@ -18,8 +32,6 @@ def generatePrimes(limit):
 
     if seemsPrime:
       primes.append(i)
-
-    i += 1
   
   return primes
 
