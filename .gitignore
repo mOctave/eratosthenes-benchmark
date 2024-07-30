@@ -1,6 +1,4 @@
 # Benchmark Bot
-benchmarkbot/node_modules
-benchmarkbot/yarn.lock
 .bb_cache
 bbout.json
 bbconf.json
