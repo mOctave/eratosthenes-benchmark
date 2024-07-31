@@ -41,7 +41,7 @@
     "cpp":{
         "id":"cpp",
         "language":"C++",
-        "prereq":"clang --version",
+        "prereq":"clang++ --version",
         "buildcmd":"clang++ CPP.cpp -std=c++11",
         "runcmd":"./a.out"
     },
@@ -63,5 +63,12 @@
         "prereq":"swift --help",
         "buildcmd":"swiftc Swift.swift -parse-as-library",
         "runcmd":"./Swift"
+    },
+    "fortran":{
+        "id":"fortran",
+        "language":"Fortran",
+        "prereq":"gfortran --version",
+        "buildcmd":"gfortran Fortran.f90",
+        "runcmd":"./a.out"
     }
 }
