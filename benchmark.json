@@ -41,7 +41,7 @@
     "cpp":{
         "id":"cpp",
         "language":"C++",
-        "prereq":"clang --version",
+        "prereq":"clang++ --version",
         "buildcmd":"clang++ CPP.cpp -std=c++11",
         "runcmd":"./a.out"
     },
@@ -69,5 +69,12 @@
         "language":"Julia",
         "prereq":"julia -v",
         "runcmd":"julia Julia.jl"
+    },
+    "fortran":{
+        "id":"fortran",
+        "language":"Fortran",
+        "prereq":"gfortran --version",
+        "buildcmd":"gfortran Fortran.f90",
+        "runcmd":"./a.out"
     }
 }

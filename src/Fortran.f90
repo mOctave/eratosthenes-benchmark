@@ -57,5 +57,6 @@ end subroutine
 end module m
 
 program Fortran
+  use m
   call main()
 end program Fortran
