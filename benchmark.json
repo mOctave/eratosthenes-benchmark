@@ -63,5 +63,11 @@
         "prereq":"swift --help",
         "buildcmd":"swiftc Swift.swift -parse-as-library",
         "runcmd":"./Swift"
+    },
+    "julia":{
+        "id":"julia",
+        "language":"Julia",
+        "prereq":"julia -v",
+        "runcmd":"julia Julia.jl"
     }
 }
