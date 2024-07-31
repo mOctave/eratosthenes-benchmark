@@ -28,7 +28,7 @@ Currently, there is no way to change the maximum number the program searches unt
 
 ## Language Information
 
-This repo currently contains code in 11 different programming languages, as described below. The following additional languages are planned but haven't yet been implemented: SQL, Bash, ARM Assembly, X86_64 Assembly, C, C#, Rust, Kotlin, PHP, and Intercal. If you would like to add a program yourself, we would welcome any contributions: please check the [style documentation](docs) to see what's wanted.
+This repo currently contains code in 12 different programming languages, as described below. The following additional languages are planned but haven't yet been implemented: SQL, Bash, ARM Assembly, X86_64 Assembly, C, C#, Rust, Kotlin, PHP, and Intercal. If you would like to add a program yourself, we would welcome any contributions: please check the [style documentation](docs) to see what's wanted.
 
 The different languages currently supported vary in how they're being used, what data structures they use to store the prime numbers, and what dependencies they have. What follows is a brief summary of all the currently implemented languages in alphabetical order.
 
@@ -48,7 +48,7 @@ The different languages currently supported vary in how they're being used, what
 
 ### GoLang
 **Status:** Implemented, Tested  
-**Usage:** Interpreted  
+**Usage:** Compiled, Interpreted  
 **Minimum Version:** Unknown  
 **Dependencies:** go  
 **Data Structure:** Array  
@@ -56,8 +56,8 @@ The different languages currently supported vary in how they're being used, what
 
 ### Iris
 **Status:** Implemented, Tested  
-**Usage:** Transpiled, Interpreted  
-**Minimum Version:** N/A  
+**Usage:** Compiled, Interpreted  
+**Minimum Version:** 6.0.0  
 **Dependencies:** iris  
 **Data Structure:** Javascript-Style Array  
 **Note:** Iris is currently not publicly available. If you wish to obtain a copy of the Iris transpiler, contact iannl.  
@@ -68,6 +68,13 @@ The different languages currently supported vary in how they're being used, what
 **Minimum Version:** Unknown  
 **Dependencies:** java  
 **Data Structure:** ArrayList  
+
+### Julia
+**Status:** Implemented, Tested  
+**Usage:** Interpreted  
+**Minimum Version:** Unknown  
+**Dependencies:** julia  
+**Data Structure:** Array  
 
 ### Lua
 **Status:** Implemented, Tested  
