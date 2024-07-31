@@ -16,13 +16,12 @@
 fn generateprimes(limit) {
     primes = []
     i = 2
-    
+
     while i <= limit {
         j = 0
-        seemsPrime = true
-        selectedPrime = -1
-
-        while (j < length(primes)) and (seemsPrime) and (selectedPrime <= sqrt(i)) {
+        prime = true
+        last = 0
+        while (j < length(primes)) and (prime) and (last <= sqrt(i)) {
             last = primes[j]
             if (i % last == 0) {
                 prime = false
@@ -37,5 +36,6 @@ fn generateprimes(limit) {
 }
 
 fn main() {
-    generateprimes(1000000)
+    limit = 1000000
+    generateprimes(limit)
 }
