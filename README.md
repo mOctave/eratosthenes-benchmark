@@ -64,7 +64,7 @@ The different languages currently included vary in how they're being used, what 
 **Usage:** Scripting  
 **Minimum Version:** 6.0.0  
 **Data Structure:** Javascript-Style Array  
-**Note:** Iris is currently not publicly available. If you wish to obtain a copy of the Iris transpiler, contact iannl.  
+**Note:** Iris is currently not publicly available. If you wish to obtain a copy of the Iris compiler, [contact iannl](https://iannl.com/links/).  
 
 ### Java
 **Status:** Implemented, Tested  
