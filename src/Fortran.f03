@@ -52,7 +52,8 @@ function generatePrimes(limit) result(primes)
 end function
 
 subroutine main()
-  print *, generatePrimes(1000000)
+  integer, dimension(:), allocatable :: primes
+  primes = generatePrimes(1000000)
 end subroutine
 end module m
 
