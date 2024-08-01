@@ -74,7 +74,7 @@
         "id":"fortran",
         "language":"Fortran",
         "prereq":"gfortran --version",
-        "buildcmd":"gfortran Fortran.f90",
+        "buildcmd":"gfortran Fortran.f03",
         "runcmd":"./a.out"
     }
 }
