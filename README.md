@@ -3,7 +3,7 @@ A repository containing slightly optimized Sieve of Eratosthenes code in a varie
 
 ## Benchmarking Instructions
 
-Using this repository for benchmarking requires NodeJS and npm. Assuming that both have been set up and your working directory is the root one for the repo ( the one containing this README file), you should then be able to install and run BenchmarkBot as follows:
+Using this repository for benchmarking requires NodeJS and npm. Assuming that both have been set up and your working directory is the root one for the repo (the one containing this README file), you should then be able to install and run BenchmarkBot as follows:
 ```bash
 npm i -g benchmarkbot
 bb
@@ -47,7 +47,7 @@ The different languages currently supported vary in how they're being used, what
 
 ### GoLang
 **Status:** Implemented, Tested  
-**Usage:** Scripting  
+**Usage:** Compiled  
 **Minimum Version:** Unknown  
 **Data Structure:** Array  
 **Note:** Your IDE may throw errors about having C++ files in the same directory as the GoLang.go file. These errors do not interfere with the program's execution and should be ignored.  
