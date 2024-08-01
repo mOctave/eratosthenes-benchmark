@@ -36,84 +36,73 @@ The different languages currently supported vary in how they're being used, what
 **Status:** Implemented, Tested  
 **Usage:** Compiled  
 **Minimum Version:** C++11  
-**Dependencies:** clang++  
 **Data Structure:** Vector  
+**Note:** Compilation requires clang++ 
 
 ### Fortran
-**Status:** Implemented, Untested  
+**Status:** Implemented, Tested  
 **Usage:** Compiled  
 **Minimum Version:** Fortran 90  
-**Dependencies:** gfortran  
 **Data Structure:** Vector Array  
 
 ### GoLang
 **Status:** Implemented, Tested  
-**Usage:** Compiled, Interpreted  
+**Usage:** Scripting  
 **Minimum Version:** Unknown  
-**Dependencies:** go  
 **Data Structure:** Array  
 **Note:** Your IDE may throw errors about having C++ files in the same directory as the GoLang.go file. These errors do not interfere with the program's execution and should be ignored.  
 
 ### Iris
 **Status:** Implemented, Tested  
-**Usage:** Compiled, Interpreted  
+**Usage:** Scripting  
 **Minimum Version:** 6.0.0  
-**Dependencies:** iris  
 **Data Structure:** Javascript-Style Array  
 **Note:** Iris is currently not publicly available. If you wish to obtain a copy of the Iris transpiler, contact iannl.  
 
 ### Java
 **Status:** Implemented, Tested  
-**Usage:** Compiled, Interpreted  
+**Usage:** Compiled  
 **Minimum Version:** Unknown  
-**Dependencies:** java  
 **Data Structure:** ArrayList  
 
 ### Julia
 **Status:** Implemented, Tested  
-**Usage:** Interpreted  
+**Usage:** Scripting  
 **Minimum Version:** Unknown  
-**Dependencies:** julia  
 **Data Structure:** Array  
 
 ### Lua
 **Status:** Implemented, Tested  
-**Usage:** Interpreted  
+**Usage:** Scripting  
 **Minimum Version:** Unknown  
-**Dependencies:** lua  
 **Data Structure:** Table  
 
 ### NodeJS
 **Status:** Implemented, Tested  
-**Usage:** Interpreted  
+**Usage:** Scripting  
 **Minimum Version:** Unknown  
-**Dependencies:** node  
 **Data Structure:** Javascript-Style Array  
 
 ### Perl
 **Status:** Implemented, Tested  
-**Usage:** Interpreted  
+**Usage:** Scripting  
 **Minimum Version:** Unknown  
-**Dependencies:** perl  
 **Data Structure:** Array  
 
 ### Python
 **Status:** Implemented, Tested  
-**Usage:** Interpreted  
+**Usage:** Scripting  
 **Minimum Version:** 3  
-**Dependencies:** python3  
 **Data Structure:** List  
 
 ### Ruby
 **Status:** Implemented, Tested  
-**Usage:** Interpreted  
+**Usage:** Scripting  
 **Minimum Version:** Unknown  
-**Dependencies:** ruby  
 **Data Structure:** Array  
 
 ### Swift
 **Status:** Implemented, Tested  
 **Usage:** Compiled  
 **Minimum Version:** Unknown  
-**Dependencies:** swift  
 **Data Structure:** Array  
