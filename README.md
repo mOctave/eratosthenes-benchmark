@@ -45,7 +45,7 @@ The different languages currently supported vary in how they're being used, what
 **Minimum Version:** Fortran 90  
 **Data Structure:** Vector Array  
 
-### GoLang
+### Go
 **Status:** Implemented, Tested  
 **Usage:** Compiled  
 **Minimum Version:** Unknown  
