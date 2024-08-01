@@ -82,5 +82,12 @@
         "language":"PHP",
         "prereq":"php -v",
         "runcmd":"php PHP.php"
+    },
+    "csharp":{
+        "id":"csharp",
+        "language":"C#",
+        "prereq":"mono -V",
+        "buildcmd":"csc CSharp.cs",
+        "runcmd":"mono CSharp.exe"
     }
 }
