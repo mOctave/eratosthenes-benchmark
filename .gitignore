@@ -8,3 +8,6 @@ usertests
 
 # Other files to exclude
 .DS_Store
+*.mod
+*.out
+*.class

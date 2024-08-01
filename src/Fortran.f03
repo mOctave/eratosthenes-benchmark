@@ -19,13 +19,14 @@ module m
 
 function generatePrimes(limit) result(primes)
   implicit none
-  integer :: limit
-  integer, dimension(limit) :: primes
+  integer, intent(in) :: limit
+  integer, dimension(:), allocatable :: primes
   integer :: i
   integer :: j
   logical :: seemsPrime
   integer :: selectedPrime
-  integer :: index = 0
+
+  allocate(primes(0))
 
   do i = 2, limit
     j = 0
@@ -44,8 +45,7 @@ function generatePrimes(limit) result(primes)
     end do
 
     if (seemsPrime) then
-      primes(index) = i
-      index = index + 1
+      primes = [primes, i]
     end if
 
   end do
