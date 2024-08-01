@@ -76,5 +76,11 @@
         "prereq":"gfortran --version",
         "buildcmd":"gfortran Fortran.f03",
         "runcmd":"./a.out"
+    },
+    "php":{
+        "id":"php",
+        "language":"PHP",
+        "prereq":"php -v",
+        "runcmd":"php PHP.php"
     }
 }
