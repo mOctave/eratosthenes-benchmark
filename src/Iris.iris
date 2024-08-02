@@ -13,29 +13,30 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-fn generateprimes(limit) {
+fn generatePrimes(limit) {
     primes = []
     i = 2
 
     while i <= limit {
         j = 0
-        prime = true
-        last = 0
-        while (j < length(primes)) and (prime) and (last <= sqrt(i)) {
-            last = primes[j]
-            if (i % last == 0) {
-                prime = false
+        seemsPrime = true
+        selectedPrime = 0
+        while (j < length(primes)) and (seemsPrime) and (selectedPrime <= sqrt(i)) {
+            selectedPrime = primes[j]
+            if (i % selectedPrime == 0) {
+                seemsPrime = false
             }
             j = j + 1
         }
-        if (prime) {
+        if (seemsPrime) {
             push(primes, i)
         }
         i = i + 1
     }
+
+    return primes
 }
 
 fn main() {
-    limit = 1000000
-    generateprimes(limit)
+    generatePrimes(1000000)
 }
