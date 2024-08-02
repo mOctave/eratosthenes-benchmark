@@ -1,0 +1,14 @@
+docs:
+  - 'LICENSE'
+  - 'README.md'
+  - 'docs/**/*'
+
+code:
+  - 'src/**/*'
+
+config:
+  - 'benchmark.json'
+  - '.gitignore'
+
+actions:
+  - '.github/**/*.yml'

@@ -1,0 +1,29 @@
+name: Compute Changes
+
+on:
+  workflow_call:
+    outputs:
+      docs:
+        value: ${{ jobs.changed.outputs.docs }}
+      code:
+        value: ${{ jobs.changed.outputs.code }}
+      config:
+        value: ${{ jobs.changed.outputs.config }}
+      actions:
+        value: ${{ jobs.changed.outputs.actions }}
+
+jobs:
+  changed:
+    runs-on: ubutnu-latest
+    outputs:
+      docs: ${{ steps.filter.outputs.docs }}
+      code: ${{ steps.filter.outputs.code }}
+      config: ${{ steps.filter.outputs.config }}
+      actions: ${{ steps.filter.outputs.actions }}
+    steps:
+    - uses: actions/checkout@v4
+    - uses: dorny/paths-filter@v3
+      id: filter
+      with:
+        filters: .github/filters.yml
+        token: $ {{ github.token }}
