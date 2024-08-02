@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    types: [opened, synchronize]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  changed:
+    uses: ./.github/workflows/changed.yml
+  build_ubuntu:
+    name: Ubuntu
+    needs: changed
+    if: ${{ needs.changed.outputs.code == 'true' || needs.changed.outputs.config == 'true' || needs.changed.outputs.actions == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    - uses: actions/setup-python@v5
+      with:
+        python-version: 3
+    - name: Install BenchmarkBot
+      run: npm i -g benchmarkbot
+    - name: Run Benchmarks
+      run: bb
