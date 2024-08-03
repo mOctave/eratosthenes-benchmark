@@ -14,7 +14,7 @@ on:
 
 jobs:
   changed:
-    runs-on: ubutnu-latest
+    runs-on: ubuntu-latest
     outputs:
       docs: ${{ steps.filter.outputs.docs }}
       code: ${{ steps.filter.outputs.code }}
