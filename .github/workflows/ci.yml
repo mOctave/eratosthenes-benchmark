@@ -42,6 +42,7 @@ jobs:
       with:
         version: latest
     - uses: ruby/setup-ruby@v1
+        ruby-version: 3.3
     - name: Install BenchmarkBot
       run: npm i -g benchmarkbot
     - name: Run Benchmarks
