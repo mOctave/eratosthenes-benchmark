@@ -114,6 +114,13 @@ The different languages currently included vary in how they're being used, what 
 **Minimum Version:** Unknown  
 **Data Structure:** Array  
 
+### Rust
+**Status:** Implemented, Tested  
+**Usage:** Compiled  
+**Minimum Version:** Unknown  
+**Data Structure:** Vector  
+**Note:** Currently unrunnable through BenchmarkBot.  
+
 ### Swift
 **Status:** Implemented, Tested  
 **Usage:** Compiled  
