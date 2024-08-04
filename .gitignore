@@ -11,3 +11,5 @@ usertests
 *.mod
 *.out
 *.class
+src/target
+Cargo.lock

@@ -89,5 +89,12 @@
         "prereq":"mono -V",
         "buildcmd":"csc CSharp.cs",
         "runcmd":"mono CSharp.exe"
+    },
+    "rust":{
+        "id":"rust",
+        "language":"Rust",
+        "prereq":"cargo -V",
+        "buildcmd":"cargo build",
+        "runcmd":"./target/debug/Rust"
     }
 }

@@ -1,0 +1,11 @@
+[package]
+name = "Rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["mOctave <mOctave31415@gmail.com>"]
+
+[[bin]]
+name = "Rust"
+path = "./Rust.rs"
+
+[dependencies]
