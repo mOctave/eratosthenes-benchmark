@@ -14,18 +14,20 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <math.h>
+#include <stdio.h>
 #include <stdlib.h>
 
-int *generatePrimes(const int maxNumber) {
+int32_t *generatePrimes(const int32_t maxNumber) {
   // approximation for how many primes are between 1 and maxNumber
-  const int approximateCount = (int)((double)maxNumber / log(maxNumber));
+  const int32_t approximateCount = (int32_t)((double)maxNumber / log(maxNumber));
 
-  int *prime_list = calloc(approximateCount, sizeof(int));
+  int32_t *prime_list = calloc(approximateCount, sizeof(int32_t));
 
-  int size = 0;
-  int is_prime = 1;
-  for (int x = 2; x <= maxNumber; x+=1) {
-    for (int i = 0; i < size && prime_list[i] <= sqrt(i); i++) {
+  int32_t size = 0;
+  int8_t is_prime = 1;
+  for (int32_t x = 2; x <= maxNumber; x+=1) {
+    const int32_t sqrtX = (int32_t)sqrt(x);
+    for (int32_t i = 0; i < size && prime_list[i] <= sqrtX; i++) {
       if (x % prime_list[i] == 0) {
         is_prime = 0;
         break;
@@ -42,7 +44,7 @@ int *generatePrimes(const int maxNumber) {
 }
 
 int main(int argc, const char **argv) {
-  int *primes = generatePrimes(1000000);
+  int32_t *primes = generatePrimes(1000000);
 
   free(primes);
   return 0;
