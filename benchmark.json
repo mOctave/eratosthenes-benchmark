@@ -42,7 +42,14 @@
         "id":"cpp",
         "language":"C++",
         "prereq":"clang++ --version",
-        "buildcmd":"clang++ CPP.cpp -std=c++11",
+        "buildcmd":"clang++ CPP.cpp -std=c++11 -O2",
+        "runcmd":"./a.out"
+    },
+    "c":{
+        "id":"c",
+        "language":"C",
+        "prereq":"clang --version",
+        "buildcmd":"clang C.c -O2 -march=native",
         "runcmd":"./a.out"
     },
     "ruby":{
